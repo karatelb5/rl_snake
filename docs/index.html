@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake PPO</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Snake PPO</h1>
+        <p class="subtitle">PPO-trained agent. Browser inference.</p>
+        
+        <div class="game-container">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="btnStart">Start</button>
+            <button id="btnPause">Pause</button>
+            <button id="btnReset">Reset</button>
+        </div>
+
+        <div class="speed-control">
+            <label>Speed:</label>
+            <input type="range" id="speedRange" min="1" max="100" value="30">
+            <span id="speedValue">30</span> ms
+        </div>
+
+        <div class="stats">
+            <span>Score: <b id="scoreDisplay">0</b></span>
+            <span>Steps: <b id="stepsDisplay">0</b></span>
+        </div>
+    </div>
+
+    <script src="js/snake.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

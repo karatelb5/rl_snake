@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #0a0a0a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #e5e5e5;
+}
+
+.container {
+    background: #111;
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 480px;
+    width: 100%;
+    border: 1px solid #222;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: 1.5rem;
+    color: #dc2626;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+    background: #080808;
+    border-radius: 8px;
+    padding: 4px;
+    border: 1px solid #1f1f1f;
+}
+
+#gameCanvas {
+    display: block;
+    border-radius: 4px;
+    image-rendering: pixelated;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    margin: 12px 0;
+    justify-content: center;
+}
+
+button {
+    background: #1a1a1a;
+    color: #e5e5e5;
+    border: 1px solid #333;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.15s;
+}
+
+button:hover {
+    background: #252525;
+}
+
+#btnStart {
+    background: #dc2626;
+    border-color: #dc2626;
+    color: white;
+}
+
+#btnStart:hover {
+    background: #b91c1c;
+}
+
+.speed-control {
+    width: 100%;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.speed-control label {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+#speedRange {
+    width: 140px;
+    accent-color: #dc2626;
+}
+
+#speedValue {
+    color: #999;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: #151515;
+    border-radius: 8px;
+    margin-top: 12px;
+    font-family: monospace;
+    font-size: 0.95rem;
+    border: 1px solid #222;
+}
+
+.stats b {
+    color: #dc2626;
+}
