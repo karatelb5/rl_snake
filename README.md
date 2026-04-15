@@ -1,6 +1,6 @@
 #  PPO Snake
 
-This repository implements a Snake agent trained with Proximal Policy Optimization (PPO) using a 16-dimensional observation space. The trained policy is exported as pure JSON and runs entirely in the browser.  
+This repository implements a Snake agent trained with Proximal Policy Optimization (PPO) using a 16-dimensional observation space. The trained policy is exported as JSON and runs in the browser.  
 👉 [Open Demo](https://karatelb5.github.io/rl_snake/)
 
 ###  Observation Space
@@ -13,7 +13,7 @@ This repository implements a Snake agent trained with Proximal Policy Optimizati
 ```
 ###  Reward Shaping
 
-After experiments and neural network training, the most effective features were identified:
+After experiments and training, the most effective features were identified:
 
 - +20 for eating an apple
 - -25 for death
