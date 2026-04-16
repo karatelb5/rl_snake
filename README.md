@@ -46,7 +46,7 @@ After experiments and training, the most effective features were identified:
 Run a local server:
 
 ```bash
-cd web && python -m http.server 8000
+cd docs && python -m http.server 8000
 ````
 
 Open:
@@ -60,7 +60,7 @@ The interface supports real-time interaction with the trained agent, including s
 The model loads automatically from:
 
 ```
-web/models/weights.json
+docs/models/weights.json
 ```
 
 ---
@@ -88,7 +88,7 @@ python main.py --export models/custom_weights.json
 | :------- | :---------------------- | :----------------------- |
 | --steps  | 500000                  | Total training timesteps |
 | --grid   | 20                      | Grid size (N × N)        |
-| --export | web/models/weights.json | Path for JSON export     |
+| --export | docs/models/weights.json | Path for JSON export     |
 | --lr     | 3e-4                    | Learning rate            |
 | --ent    | 0.01                    | Entropy coefficient      |
 
