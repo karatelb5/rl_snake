@@ -8,7 +8,7 @@ from exporter import export_to_json
 
 
 def run_training(total_timesteps: int = 500_000, grid_size: int = 20,
-                 export_path: str = "web/models/weights.json",
+                 export_path: str = "docs/models/weights.json",
                  learning_rate: float = 3e-4, ent_coef: float = 0.01):
     
     env = DummyVecEnv([lambda: SnakeEnv(grid_size=grid_size)])
