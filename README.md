@@ -1,7 +1,7 @@
 #  PPO Snake
 
 This repository implements a Snake agent trained with Proximal Policy Optimization (PPO) using a 16-dimensional observation space. The trained policy is exported as JSON and runs in the browser.  
-👉 [Open Demo](https://karatelb5.github.io/rl_snake/)
+👉 [Open Demo](https://karatelb5.github.io/snake-rl/)
 
 ###  Observation Space
 
